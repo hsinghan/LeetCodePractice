@@ -8,8 +8,6 @@
 // The length of input array is a positive integer and will not exceed 10,000
 // 
 // Question: Given a binary array, find the maximun number of consecutive 1s in the array.
-#include <iostream>
-#include "vector"
 class Solution
 {
 public:
