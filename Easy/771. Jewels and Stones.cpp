@@ -24,7 +24,10 @@ public:
         int res = 0;
         unordered_set<char> setJ(J.begin(), J.end());
         // count of unordered_set is used to find that if the key exist in the container. If yes, return true(1) 
-        for (char s : S) if (setJ.count(s)) res++;
+        for (char s : S){ 
+            if (setJ.count(s))
+                res++;
+        }
         return res;
     }
 };
