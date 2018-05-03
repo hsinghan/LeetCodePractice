@@ -39,6 +39,7 @@ public:
         int res_count = 0;
         for (int i = L; i <=R; ++i)
         {
+            // log(10^6) 大約接近 20, bitset的長度設定成20即可
             bitset<20> bs(i);
 
             // ordered_set::count
