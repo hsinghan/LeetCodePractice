@@ -41,7 +41,7 @@ public:
             // Abc
             // abc
         else if (count == 2*(size-1))
-            // all upcas, e.g. ABC
+            // all upcase, e.g. ABC
             return word[0] >= 'A' && word[0] <= 'Z'; 
         else
             return false;
