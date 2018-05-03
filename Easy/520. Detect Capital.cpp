@@ -36,8 +36,12 @@ public:
             // In fact, as long as the second letter to last letter are all lowercase,
             // whether the first letter is upcase or lowercase, 
             // the word will satisfy the conition.
+        
+            // Example:
+            // Abc
+            // abc
         else if (count == 2*(size-1))
-            // all upcase
+            // all upcas, e.g. ABC
             return word[0] >= 'A' && word[0] <= 'Z'; 
         else
             return false;
