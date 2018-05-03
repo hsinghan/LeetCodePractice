@@ -45,7 +45,7 @@ public:
             // ordered_set::count
             // Searches the container for elements with a value of k 
             // and returns the number of elements found
-            // 搜尋集合中, 有多少個k, 並回傳該數量
+            // 檢查某個數是否存在於集合中，存在 回傳1, 否則回傳0
 
             // bitset::count
             // Returns the number of bits in the bitset that are set 
