@@ -50,7 +50,7 @@ public:
             // bitset::count
             // Returns the number of bits in the bitset that are set 
             // (i.e., that have a value of one).
-            // 回傳有多少個1
+            // 回傳 該數字用二進制表示會有多少個1
 
             // ex: L = 10 = 1010
             // bs(10).count 回傳 2, 2 is prime, ;
