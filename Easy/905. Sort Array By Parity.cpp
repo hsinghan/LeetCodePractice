@@ -38,3 +38,37 @@ public:
         return A;
     }
 };
+
+
+
+
+/*In C*/
+/**
+ * Return an array of size *returnSize.
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* sortArrayByParity(int* A, int ASize, int* returnSize) {
+    
+    int* B = (int*)malloc(ASize * sizeof(int));
+    int evenindex = 0;
+    int oddindex = ASize-1 ;
+    
+    for(int i =0; i < ASize; i++)
+    {
+        if (A[i]%2 == 0)
+        {
+            B[evenindex] = A[i];
+            evenindex++;
+        }
+        else
+        {
+            B[oddindex] = A[i];
+            oddindex--;
+        }
+        
+    }
+    
+    // Need to assign the length to returnSize 
+    *returnSize = ASize;
+    return B;
+}
