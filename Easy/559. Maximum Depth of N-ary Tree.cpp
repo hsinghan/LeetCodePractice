@@ -30,6 +30,7 @@ public:
         }
         
         int Depth = 0;
+        // iterate all children of root
         for(vector<Node*>::iterator it = root->children.begin(); it != root->children.end();it++)
         {
             Depth = max(Depth, maxDepth(*it));
@@ -38,3 +39,9 @@ public:
         
     }
 };
+
+// Another writted method of for loop 
+ for(Node* child : root->children) 
+ {
+     Depth = max(Depth, maxDepth(child));
+ }
